@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="tvAlert">Alert</string>
+    <string name="btnToast">Toast</string>
+    <string name="btnSnackbar">Snackbar</string>
+    <string name="btnDialog">Dialog</string>
+    <string name="btnCoustomDialog">CoustomDialog</string>
+    <string name="tvTittle">Tittle</string>
+    <string name="tvName">Enter Your Name</string>
+    <string name="etName">Enter Your Name</string>
+    <string name="btnSet">Set</string>
+    <string name="btnCancel">Cancel</string>
+</resources>
