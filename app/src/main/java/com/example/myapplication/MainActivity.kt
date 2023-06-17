@@ -65,10 +65,18 @@ class MainActivity : AppCompatActivity() {
             val t1 = tvAlert.text
             etName.setText(t1)
             btnSet.setOnClickListener {
-                Toast.makeText(this,"Set",Toast.LENGTH_LONG).show()
-                dialog.dismiss()
-                val name = etName.text
-                tvAlert.text = name
+
+                if (etName.text.toString().isEmpty())
+                {
+                    etName.error = "Enter"
+                }
+                else{
+                    Toast.makeText(this,"Set",Toast.LENGTH_LONG).show()
+                    dialog.dismiss()
+                    val name = etName.text
+                    tvAlert.text = name
+                }
+
             }
             btnCancel.setOnClickListener {
                 Toast.makeText(this,"Cancel",Toast.LENGTH_LONG).show()
