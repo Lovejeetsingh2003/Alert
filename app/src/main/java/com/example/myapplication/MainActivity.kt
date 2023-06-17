@@ -62,8 +62,7 @@ class MainActivity : AppCompatActivity() {
             var btnCancel = dialog.findViewById<Button>(R.id.btnCancel)
             var etName = dialog.findViewById<EditText>(R.id.etName)
 
-            val t1 = tvAlert.text
-            etName.setText(t1)
+            etName.setText(tvAlert.text.toString())
             btnSet.setOnClickListener {
 
                 if (etName.text.toString().isEmpty())
@@ -72,9 +71,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 else{
                     Toast.makeText(this,"Set",Toast.LENGTH_LONG).show()
+                    tvAlert.text  = etName.text.toString()
                     dialog.dismiss()
-                    val name = etName.text
-                    tvAlert.text = name
                 }
 
             }
